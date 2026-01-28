@@ -1,0 +1,15 @@
+{
+  "name": "opd-engine-backend",
+  "version": "1.0.0",
+  "description": "OPD Token Allocation Engine with Express and Mongoose",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "simulation": "node src/simulation.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.0.0"
+  }
+}
+
