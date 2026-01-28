@@ -1,3 +1,5 @@
+require('dotenv').config(); 
+
 const express = require('express');
 const mongoose = require('mongoose');
 const doctorRoutes = require('./routes/doctorRoutes');
@@ -8,7 +10,6 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-require('dotenv').config(); 
 
 // Routes
 app.use('/api', doctorRoutes);
