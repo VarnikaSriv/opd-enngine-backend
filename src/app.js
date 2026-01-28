@@ -8,6 +8,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+require('dotenv').config(); 
 
 // Routes
 app.use('/api', doctorRoutes);
@@ -15,6 +16,7 @@ app.use('/api', slotRoutes);
 app.use('/api', tokenRoutes);
 
 // MongoDB connection
+
 const MONGO_URI =
   process.env.MONGO_URI || 'mongodb://localhost:27017/opd_engine';
 
